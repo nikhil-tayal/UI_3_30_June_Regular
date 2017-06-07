@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Text Formatting</h1>
+<hr/>
+
+<div>
+    <p>
+        <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b> Blanditiis dicta dolor eos, eum incidunt
+        laboriosam magnam omnis, pariatur quia quisquam reiciendis temporibus velit voluptate. <i>A architecto
+        exercitationem suscipit tempore vel.</i>
+        <u>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</u> Blanditiis dicta dolor eos, eum incidunt
+        laboriosam magnam omnis,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pariatur quia quisquam reiciendis temporibus velit voluptate. A architecto
+        exercitationem suscipit tempore vel.
+    </p>
+    <p>
+        <strong style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> Blanditiis dicta dolor eos, eum incidunt
+        laboriosam magnam omnis, pariatur quia quisquam reiciendis temporibus velit voluptate. <em>A architecto
+        exercitationem suscipit tempore vel.</em>
+        <ins>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</ins> Blanditiis dicta dolor eos, eum incidunt
+        laboriosam magnam omnis, pariatur quia quisquam reiciendis temporibus velit voluptate. A architecto
+        exercitationem suscipit tempore vel.
+    </p>
+</div>
+
+<h2>Buy One, Get <del>one</del> two free</h2>
+
+<pre>
+<code>
+    #include &lt;iostream&gt;
+    using namespace std;
+
+    #include &lt;iomanip&gt;
+    using std::setw;
+
+    int main () {
+    int n[ 10 ]; // n is an array of 10 integers
+
+    // initialize elements of array n to 0
+    for ( int i = 0; i < 10; i++ ) {
+    n[ i ] = i + 100; // set element at location i to i + 100
+    }
+
+    cout << "Element" << setw( 13 ) << "Value" << endl;
+
+    // output each array element's value
+    for ( int j = 0; j < 10; j++ ) {
+    cout << setw( 7 )<< j << setw( 13 ) << n[ j ] << endl;
+    }
+
+    return 0;
+    }
+</code>
+</pre>
+
+<h5>&copy;Copyrights BMPL &amp; &checkmark; BMPL</h5>
+
+<h2>10<sup>2</sup> = 100</h2>
+<h2>H<sub>2</sub> + O = H<sub>2</sub>O</h2>
+
+</body>
+</html>
