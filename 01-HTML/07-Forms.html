@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Form Handling</h1>
+
+<form action="login.html" method="post">
+    <label for="username">Enter Name</label>
+    <input type="text" id="username" name="u_name" value="Ram"/>
+    <label for="pwd">Enter Password</label>
+    <input type="password" id="pwd" name="u_pwd"/>
+    <br/><br/>
+    Select Month
+    <select name="">
+        <option>Select Month</option>
+        <option value="Jan">January</option>
+        <option value="Feb">February</option>
+        <option value="Mar">March</option>
+        <option value="Apr">April</option>
+        <option value="June">June</option>
+    </select>
+    <select name="">
+        <optgroup label="Asia">
+            <option value="Ind">India</option>
+            <option value="China">China</option>
+            <option value="SL">Sri Lanka</option>
+        </optgroup>
+        <optgroup label="Europe">
+            <option value="UK">England</option>
+            <option value="Fr">France</option>
+            <option value="It">Italy</option>
+        </optgroup>
+    </select>
+    <br/><br/>
+    Select Gender
+    <input type="radio" name="gender" value="m"/> Male
+    <input type="radio" name="gender" value="f"/> Female
+    <br/><br/>
+    Select Hobby
+    <input type="checkbox"/> Cricket
+    <input type="checkbox"/> Chess
+    <input type="checkbox"/> Hockey
+    <input type="checkbox"/> Football
+    <br/><br/>
+    <input type="submit" value="Register"/>
+</form>
+
+</body>
+</html>
