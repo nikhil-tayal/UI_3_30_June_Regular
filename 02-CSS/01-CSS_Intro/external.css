@@ -1,0 +1,9 @@
+/*
+div - Selector
+{} - Expression
+width - Property
+500px - value
+*/
+div {
+    width: 500px;
+}

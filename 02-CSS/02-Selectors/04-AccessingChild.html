@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ul li:first-child {
+            color: red;
+            font-size: 20px;
+        }
+        ul li:last-child {
+            color: cadetblue;
+            font-size: 20px;
+        }
+        ul li:nth-child(5),ul li:nth-child(8) {
+            background-color: crimson;
+        }
+        ul li:nth-child(odd){
+            background-color: chocolate;
+        }
+        ul li:nth-child(even) {
+            background-color: burlywood;
+        }
+        ul li:nth-child(3n){
+            background-color: fuchsia;
+        }
+        ul li:first-child:first-letter {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Child Access</h1>
+
+<ul>
+    <li>Menu Item 1</li>
+    <li>Menu Item 2</li>
+    <li>Menu Item 3</li>
+    <li>Menu Item 4</li>
+    <li>Menu Item 5</li>
+    <li>Menu Item 6</li>
+    <li>Menu Item 7</li>
+    <li>Menu Item 8</li>
+    <li>Menu Item 9</li>
+</ul>
+
+</body>
+</html>

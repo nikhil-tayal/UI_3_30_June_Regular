@@ -1,0 +1,8 @@
+#div_1, #div_2, #div_3, #div_4, #div_5 {
+    height: 150px;
+    background-color: coral;
+}
+
+#div_2.secondary {
+    background-color: blueviolet;
+}

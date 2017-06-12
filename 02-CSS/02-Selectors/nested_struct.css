@@ -1,0 +1,7 @@
+.child .greater_grand_child {
+    background-color: blueviolet;
+}
+
+#parent_1 .child .secondary {
+    background-color: burlywood;
+}
