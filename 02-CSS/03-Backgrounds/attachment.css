@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+    background-image: url("http://cdn.collider.com/wp-content/uploads/iron_man_2_movie_image_robert_downey_jr_05.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+h2 {
+    color: #fff;
+}
+
+div {
+    height: 550px;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin-bottom: 400px;
+}
+
+#div_1 {
+    background-image: url("../../images/WebImages/Terminator002.jpg");
+}
+
+#div_2 {
+    background-image: url("../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+}
+
+#div_3 {
+    background-image: url("../../images/WebImages/chris_hemsworth__angry_thor.jpg");
+}
+
+#div_4 {
+    background-image: url("../../images/WebImages/Iron-Man-3-2013-Wallpaper.jpg");
+}
+
+#div_5 {
+    background-image: url("../../images/WebImages/wallpaper_14028.jpg");
+}
+
+#div_6 {
+    background-image: url("../../images/WebImages/wallpaper_1277.jpg");
+}
