@@ -1,0 +1,35 @@
+.list_1 .fa {
+    color: brown;
+}
+
+.social_links {
+    list-style: none;
+}
+
+.social_links li {
+    font-size: 20px;
+    height: 25px;
+    text-align: center;
+    padding: 5px 0px;
+    width: 40px;
+    background-color: #fff444;
+}
+.social_links li a {
+    color: #fff;
+}
+
+li.fb {
+    background-color: #3b5998;
+}
+li.tw {
+    background-color: #0084b4;
+}
+li.yt {
+    background-color: #bb0000;
+}
+li.ins {
+    background-color: #ffc838;
+}
+li.link {
+    background-color: #0077B5;
+}
