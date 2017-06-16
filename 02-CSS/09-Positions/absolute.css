@@ -1,0 +1,49 @@
+body {
+    margin: 0px;
+}
+
+#topbar {
+    height: 50px;
+    background-color: #0084b4;
+}
+
+#header {
+    background-color: #ffc838;
+    text-align: center;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    top: 50px;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+#content {
+    margin-top: 120px;
+}
+#content img {
+    width: 49.8%;
+}
+
+#image_1,#image_2,#image_3,#image_4 {
+    border: 1px solid green;
+    height: 300px;
+    position: relative;
+}
+#image_1 img,#image_2 img,#image_3 img,#image_4 img {
+    position: absolute;
+    width: auto;
+    top: 0px;
+}
+
+#image_1 img, #image_3 img {
+    right: 0px;
+}
+
+#image_2 img, #image_4 img {
+    left: 0px;
+}

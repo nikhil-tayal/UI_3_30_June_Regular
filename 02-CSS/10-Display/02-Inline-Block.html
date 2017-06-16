@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ul {
+            margin: 0px auto;
+            padding: 0px;
+            position: relative;
+            width: 80%;
+        }
+        ul li {
+            display: inline-block;
+            background-color: #0077B5;
+            margin: 0px;
+            text-align: center;
+            width: 19.7%;
+            /*position: relative;*/
+        }
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        .column {
+            text-align: center;
+            display: inline-block;
+            width: 48%;
+        }
+        .dropdown {
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: 37px;
+            display: none;
+        }
+        .dropdown li {
+            display: block;
+            width: 100%;
+            margin: 0px;
+            /*padding: 10px 0px;*/
+        }
+        ul li:hover .dropdown {
+            display: block;
+        }
+        ul li:hover {
+            background-color: #ffc838;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Display Inline-Block</h1>
+
+<ul>
+    <li><a href="#">Menu Item</a></li>
+    <li>
+        <a href="#">Menu Item</a>
+        <ul class="dropdown">
+            <li><a href="#">Nested 1</a></li>
+            <li><a href="#">Nested 2</a></li>
+            <li><a href="#">Nested 3</a></li>
+            <li><a href="#">Nested 4</a></li>
+            <li><a href="#">Nested 5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Menu Item</a></li>
+    <li>
+        <a href="#">Menu Item</a>
+        <ul class="dropdown">
+            <li><a href="#">Nested 1</a></li>
+            <li><a href="#">Nested 2</a></li>
+            <li><a href="#">Nested 3</a></li>
+            <li><a href="#">Nested 4</a></li>
+            <li><a href="#">Nested 5</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Menu Item</a></li>
+</ul>
+
+<div id="two-col">
+    <div class="column">
+        <h2>Column 1</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi asperiores atque corporis, deleniti
+            eaque eos fuga fugit ipsum laborum nostrum, quas quod quos saepe sequi suscipit ullam vel voluptatum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi asperiores atque corporis, deleniti
+            eaque eos fuga fugit ipsum laborum nostrum, quas quod quos saepe sequi suscipit ullam vel voluptatum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi asperiores atque corporis, deleniti
+            eaque eos fuga fugit ipsum laborum nostrum, quas quod quos saepe sequi suscipit ullam vel voluptatum!
+        </p>
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+    <div class="column">
+        <h2>Column 2</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi asperiores atque corporis, deleniti
+            eaque eos fuga fugit ipsum laborum nostrum, quas quod quos saepe sequi suscipit ullam vel voluptatum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi asperiores atque corporis, deleniti
+            eaque eos fuga fugit ipsum laborum nostrum, quas quod quos saepe sequi suscipit ullam vel voluptatum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi asperiores atque corporis, deleniti
+            eaque eos fuga fugit ipsum laborum nostrum, quas quod quos saepe sequi suscipit ullam vel voluptatum!
+        </p>
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+</div>
+
+</body>
+</html>
