@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    /*padding: 0px 40px;*/
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/*
+Header
+*/
+#header {
+    padding: 10px 0px;
+}
+#header p {
+    font-size: 14px;
+    margin: 0px;
+    color: #626262;
+}
+#header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#header .header-top {
+    margin-bottom: 20px;
+}
+#header .header-top ul li {
+    float: left;
+    font-size: 14px;
+    padding: 0px 10px;
+    border-right: 1px solid #626262;
+}
+#header .header-top ul li:last-child {
+    border: none;
+}
+#header .header-top ul li a {
+    color: #626262;
+    text-decoration: none;
+}
+
+#header .main-header {
+    margin-bottom: 20px;
+}
+#header .logo {
+    width: 15%;
+    margin-right: 30px;
+}
+#header .logo img {
+    width: 100%;
+}
+#header .search {
+    width: 55%;
+}
+#header .search input[type="text"]{
+    width: 90%;
+    height: 30px;
+}
+#header .search input[type="submit"]{
+    height: 30px;
+    width: 40px;
+    /*background-size: 100% 100%;
+    background-color: #00B2AD;
+    background-image: url("../images/mag_glass.png");*/
+    border: 1px solid #00B2AD;
+    margin-left: -44px;
+    background: #00B2AD url("../images/mag_glass.png")no-repeat 0px 0px /100% 100%;
+}
+#header .user_section {
+    width: 27%;
+    padding-top: 10px;
+}
+
+#header .user_section ul li{
+    float: left;
+    border-right: 1px solid #000;
+    padding: 0px 10px;
+}
+#header .user_section ul li a {
+    color: #1a4f69;
+    text-decoration: none;
+    border: 1px solid #1a4f69;
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+#header .user_section ul li a:hover {
+    background-color: #f4f4f4;
+}
+#header .user_section ul li:last-child {
+    border: none;
+}
+#header .user_section .cart {
+    font-size: 20px;
+}
+
+
+/*
+Main-Navigation
+*/
+#main-navigation {
+    padding: 10px 0px;
+    background-color: #FAF8F9;
+}
+#main-navigation ul {
+    float: right;
+}
+#main-navigation ul li{
+    float: left;
+    margin: 0px 20px;
+}
+#main-navigation ul li a {
+    color: #000;
+    text-decoration: none;
+}
