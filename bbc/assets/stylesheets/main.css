@@ -1,0 +1,130 @@
+body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.container {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+#header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#header a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    padding: 9px;
+}
+#header .logo {
+    width: 8%;
+    border-right: 1px solid #626262;
+}
+/*#header .logo a {
+    display: block;
+    padding: 10px;
+}*/
+#header .logo img {
+    width: 100%;
+}
+#header .logo a {
+    padding: 7px 10px 0px 0px;
+}
+
+#header .sign-in {
+    width: 12%;
+    border-right: 1px solid #626262;
+}
+
+#header .search {
+    width: 17%;
+    padding: 5px 10px 0px;
+    position: relative;
+}
+#header .search input[type="text"] {
+    background-color: lightgray;
+    border: none;
+    height: 25px;
+    width: 100%;
+}
+#header .search input[type="submit"]{
+    background: lightgray url("../images/mag_glass.png") no-repeat;
+    background-size: 100% 100%;
+    height: 25px;
+    border: none;
+    width: 30px;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+#main-navigation {
+    width: 61%;
+}
+#main-navigation ul li {
+    display: inline-block;
+    font-size: 14px;
+    border-right: 1px solid #626262;
+}
+#main-navigation ul li a {
+    padding: 10px 15px;
+}
+#main-navigation ul li:last-child {
+    width: 18%;
+}
+
+#inner-header {
+    background-color: #bb0000;
+}
+#inner-header h1 {
+    font-size: 40px;
+    line-height: 44px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+#inner-header ul li {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px;
+    border-bottom: 4px solid transparent;
+}
+#inner-header ul li a {
+    color: #fff ;
+}
+#inner-header ul li:hover {
+    border-bottom: 4px solid #fff;
+}
+
+
+#section_1 img {
+    width: 100%;
+}
+
+.col-sm {
+    width: 18%;
+}
+.col-md {
+    width: 40%;
+    padding: 0px 15px;
+}
