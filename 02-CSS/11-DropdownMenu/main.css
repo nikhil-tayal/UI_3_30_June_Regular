@@ -1,0 +1,51 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+    margin: 0px 2px;
+    width: 11%;
+    text-align: center;
+    background-color: #0077B5;
+    /*position: relative;*/
+}
+
+ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.left {
+    float: left;
+    width: 50%;
+}
+.right {
+    float: right;
+    width: 50%;
+}
+
+.dropdown {
+    background-color: #eeeeee;
+    position: absolute;
+    width: 80%;
+    height: 300px;
+    left: 0px;
+    display: none;
+}
+.dropdown img {
+    width: 40%;
+}
+
+ul li:hover .dropdown {
+    display: block;
+}
