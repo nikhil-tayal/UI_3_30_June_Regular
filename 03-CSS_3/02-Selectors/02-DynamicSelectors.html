@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        input:checked {
+            height: 30px;
+            width: 30px;
+        }
+        .image {
+            display: none;
+        }
+        .images img {
+            display: none;
+        }
+        input[type="checkbox"]:checked ~ .image{
+            display: block;
+        }
+        input[value="m"]:checked ~ .images img[alt="male"] {
+            display: block;
+        }
+        input[value="f"]:checked ~ .images img[alt="female"] {
+            display: block;
+        }
+        #login {
+            position: absolute;
+            border: 2px solid red;
+            padding: 30px;
+            width: 40%;
+            left: 20%;
+            display: none;
+        }
+        #login:target {
+            display: block;
+        }
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            text-decoration: none;
+        }
+        .close:after {
+            content: "x";
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Dynamic Selectors</h1>
+
+<input type="checkbox"/> Show Image
+<br/><br/>
+<input type="radio" name="gender" value="m"/> Male
+<input type="radio" name="gender" value="f"/> Female
+
+<div class="image">
+    <img src="../../images/00-22.gif" alt="image"/>
+</div>
+
+<div class="images">
+    <img src="man.png" alt="male"/>
+    <img src="female.png" alt="female"/>
+</div>
+
+<a href="#login">Login</a>
+
+<div id="login">
+    <a href="#" class="close"></a>
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td><input type="password"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

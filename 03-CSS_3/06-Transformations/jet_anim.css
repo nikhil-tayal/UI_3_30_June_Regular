@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+}
+#container {
+    height: 640px;
+    background-image: url("image_2.jpg");
+    background-size: 200% 200%;
+    background-position: center center;
+    transition: 40s;
+}
+
+#jet {
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    background-image: url("image_1.png");
+    background-size: 100% 100%;
+    transform: translate(400px,10px) scale(0.01,0.01);
+    transition: 20s;
+}
+#container:hover #jet {
+    transform: scale(2,2) translate(200px,100px)
+    rotateY(-50deg) rotateZ(-70deg);
+}
+#container:hover {
+    background-size: 100% 100%;
+}
