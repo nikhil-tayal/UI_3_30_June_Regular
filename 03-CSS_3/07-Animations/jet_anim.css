@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+#container {
+    height: 640px;
+    background-image: url("image_2.jpg");
+    background-size: 200% 200%;
+    background-position: center center;
+    animation: anim_1 40s infinite linear;
+}
+
+@keyframes anim_1 {
+    from {
+        background-size: 200% 200%;
+    }
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+#jet_1 {
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    background-image: url("image_1.png");
+    background-size: 100% 100%;
+    animation: jet_1 15s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jet_1 {
+    0% {
+        transform: translate(400px,10px) scale(0.01,0.01);
+    }
+    100% {
+        transform: scale(2,2) translate(200px,100px)
+        rotateY(-50deg) rotateZ(-10deg);
+    }
+}
+
+
+#jet_2 {
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: scale(0.1,0.1);
+    opacity: 0;
+    background-image: url("1.png");
+    background-size: 100% 100%;
+    animation: jet_2 15s linear;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jet_2 {
+    0% {
+        transform: translate(0px,10px) scale(0.1,0.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2,2) translate(-300px,400px);
+        opacity: 1;
+    }
+}
+
+/*
+#container:hover #jet {
+    transform: scale(2,2) translate(200px,100px)
+    rotateY(-50deg) rotateZ(-70deg);
+}
+#container:hover {
+    background-size: 100% 100%;
+}*/

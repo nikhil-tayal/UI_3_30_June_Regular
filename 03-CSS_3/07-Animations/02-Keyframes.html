@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            border: 2px solid red;
+            perspective: 300px;
+        }
+        div img {
+            animation: hulk 10s infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes hulk {
+            0% {
+                transform: translate(0px,0px);
+            }
+            50% {
+                transform: translate(1000px,0px);
+            }
+            71% {
+                transform: translate(1000px,0px) rotateY(180deg);
+            }
+            100% {
+                transform: translate(0px,0px) rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Keyframes</h1>
+
+<div>
+    <img src="../../images/hulk5-18463.gif" alt="image"/>
+</div>
+
+</body>
+</html>

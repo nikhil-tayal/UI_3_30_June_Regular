@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            height: 200px;
+            width: 300px;
+            background-color: #0077B5;
+            background-size: 100% 100%;
+            animation-name: anim_1;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            /*animation-delay: 5s;*/
+        }
+        @keyframes anim_1 {
+            from {
+                background-color: #bb0000;
+                background-image: url("../../images/WebImages/avengers-thor.jpg");
+                transform: translate(0px,0px);
+            }
+            to {
+                background-color: darkgreen;
+                background-image: url("../../images/WebImages/thor-the-dark-world-5a.jpg");
+                transform: translate(900px,200px) scale(2,2);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Animations</h1>
+
+<div>
+
+</div>
+
+</body>
+</html>
