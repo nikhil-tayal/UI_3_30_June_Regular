@@ -1,0 +1,103 @@
+#container {
+    height: 300px;
+    width: 300px;
+    margin: 100px auto 0px;
+}
+
+#cube {
+    height: 300px;
+    width: 300px;
+    /*animation: cube 5s infinite linear;*/
+    transform-style: preserve-3d;
+    /*transform-origin: bottom;*/
+    transition: 2s;
+}
+
+#container:hover #cube {
+    /*animation-play-state: paused;*/
+}
+
+#cube div {
+    color: #fff;
+    font-size: 70px;
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+    /*border-radius: 50%;*/
+    transition: 1s;
+    background-size: 100% 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#left {
+    background-image: url("../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+    transform: rotateY(90deg) rotateX(-180deg);
+    transform-origin: left;
+}
+
+#right {
+    background-image: url("../../images/WebImages/Terminator002.jpg");
+    transform: rotateY(-90deg) rotateX(-180deg);
+    transform-origin: right;
+}
+
+#top {
+    background-image: url("../../images/WebImages/Iron-Man-3-2013-Wallpaper.jpg");
+    transform: rotateX(-90deg) rotateY(-180deg);
+    transform-origin: top;
+}
+
+#bottom {
+    background-image: url("../../images/WebImages/IMG-20140419-WA0000.jpg");
+    transform: rotateX(90deg) rotateY(-180deg);
+    transform-origin: bottom;
+}
+
+#back {
+    background-image: url("../../images/WebImages/Kung-Fu-Panda-2-Movie.jpg");
+    transform: translateZ(-300px) rotateX(-180deg);
+}
+#front {
+    background-image: url("../../images/WebImages/l8q3fcvjzllbgk5oovjs.jpg");
+}
+
+input[value="play"]:checked ~ #container #cube {
+    animation: cube 5s infinite linear;
+}
+
+input[value="pause"]:checked ~ #container #cube {
+    animation-play-state: paused;
+}
+
+input[value="open"]:checked ~ #container #cube {
+    animation: open_cube 5s infinite linear;
+}
+
+input:checked[value="open"]:checked ~ #container #top {
+    transform: rotateX(-190deg) rotateY(0deg);
+}
+
+@keyframes cube {
+    0% {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    33% {
+        transform: rotateY(180deg) rotateX(360deg);
+    }
+    66% {
+        transform: rotateY(360deg) rotateX(180deg);
+    }
+    100% {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+}
+
+@keyframes open_cube {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}

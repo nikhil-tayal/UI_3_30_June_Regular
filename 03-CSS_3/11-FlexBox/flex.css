@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+}
+
+#header {
+    background-color: #0077B5;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 10px;
+    width: 45%;
+    background-color: lightgray;
+    border: 2px solid red;
+    margin: 0px 10px;
+}
