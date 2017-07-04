@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Form Elements</h1>
+
+<form action="#">
+    <table>
+        <tr>
+            <td>Enter Name</td>
+            <td><input type="text" placeholder="Enter Name" required value="Ram"/></td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="password" placeholder="Enter Password" required value="abcdef"/></td>
+        </tr>
+        <tr>
+            <td>Enter Email</td>
+            <td><input type="email" placeholder="Enter Email ID" autofocus="on" autocomplete="off"/></td>
+            <td>@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Enter URL</td>
+            <td><input type="url" placeholder="Enter URL"/></td>
+        </tr>
+        <tr>
+            <td>Enter Age</td>
+            <td><input type="number" min="18" max="30"/></td>
+        </tr>
+        <tr>
+            <td>Enter DOB + Time</td>
+            <td><input type="date"/></td>
+            <td><input type="datetime-local"/></td>
+            <td><input type="time"/></td>
+            <td><input type="month"/></td>
+            <td><input type="week"/></td>
+        </tr>
+        <tr>
+            <td>Enter Color</td>
+            <td><input type="color"/></td>
+        </tr>
+        <tr>
+            <td>Choose Photo</td>
+            <td><input type="file"/></td>
+        </tr>
+        <tr>
+            <td>Enter PIN</td>
+            <td><input type="password" maxlength="4" placeholder="Enter PIN"/></td>
+        </tr>
+        <tr>
+            <td>Select Range</td>
+            <td><input type="range" value="20" onchange="output_1.value=value" step="5"/></td>
+            <td><output id="output_1">20</output></td>
+        </tr>
+        <tr>
+            <td>Your Progress</td>
+            <td><progress id="output_2" value="20" max="100"></progress></td>
+        </tr>
+        <tr>
+            <td>Enter Card No</td>
+            <td><input type="text" pattern="[0-9]{5}|[a-f][3]" title="Enter 5 digits and 3 Alpha"/></td>
+        </tr>
+        <tr>
+            <td>Enter Your Comments</td>
+            <!--<td><input type="text" size="100"/></td>-->
+            <td><textarea cols="30" rows="10" style="resize: none;" spellcheck="true"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="reset"/></td>
+            <td><input type="submit"/></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
