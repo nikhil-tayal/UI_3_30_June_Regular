@@ -1,0 +1,49 @@
+#header {
+    background-color: orange;
+    margin-bottom: 20px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.red {
+    height: 200px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+.green {
+    height: 200px;
+    background-color: green;
+    margin-bottom: 20px;
+}
+
+#main {
+    background-color: #3e8f3e;
+}
+#sidebar {
+    height: 400px;
+    background-color: #b92c28;
+}
+
+.menu-button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    cursor: pointer;
+    pointer-events: none;
+}
+.menu-button .line {
+    display: block;
+    border: 2px solid red;
+    margin-bottom: 3px;
+    width: 30px;
+    transition: 0.6s;
+}
