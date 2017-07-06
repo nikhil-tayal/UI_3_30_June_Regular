@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#topbar {
+    padding: 5px 0px;
+    background-color: #212121;
+}
+#topbar img {
+    width: 1.5%;
+}
+#topbar a {
+    color: #bfbfbf;
+}
+#topbar a span {
+    padding: 0px 8px;
+}
+#topbar a .fa {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#header {
+    background-color: #000;
+}
+#header .logo {
+    padding-top: 30px;
+}
+#header .logo img {
+    width: 70%;
+}
+#header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#header ul li {
+    display: inline-block;
+}
+#header ul li a {
+    display: block;
+    padding: 30px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.5s;
+}
+#header ul li a:hover {
+    background-color: #3E3E3E;
+    text-decoration: none;
+}
+#header .details {
+    text-align: right;
+}
+
+#main-navigation {
+    margin-left: -30px;
+}
+
+#banner video{
+    width: 100%;
+}
+
+#content figure img {
+    width: 100%;
+}
+#content .description {
+    text-align: center;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+#content .description a {
+    color: #fff;
+    display: block;
+    padding: 30px 0px;
+    text-transform: uppercase;
+}
