@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function check_key(ev){
+            alert("Key Code "+ev.keyCode)
+        }
+    </script>
+</head>
+<body onkeyup="showKeyPress(event);">
+
+<input type="text" onkeyup="check_key(event)"/>
+
+</body>
+</html>

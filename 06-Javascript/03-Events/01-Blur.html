@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="on_blur.css"/>
+    <script>
+        function validate(){
+            /*alert("Event Fired....");*/
+            a = document.getElementById("box_1");
+            span = document.getElementById("error");
+            if(a.value == ""){
+                /*a.style.border = "1px solid red";*/
+                a.className = "red"
+                span.innerHTML = "Cannot leave this field blank";
+            }
+            else {
+                /*a.style.border = "1px solid red";*/
+                a.className = ""
+                span.innerHTML = ""
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1>Blur Event</h1>
+
+<input type="text" placeholder="Enter Name" id="box_1" onblur="validate()"/>
+<span id="error"></span>
+
+</body>
+</html>
