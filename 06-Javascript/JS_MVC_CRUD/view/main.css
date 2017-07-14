@@ -1,0 +1,22 @@
+ul {
+    list-style: none;
+}
+ul li {
+    cursor: pointer;
+    word-spacing: 15px;
+}
+ul li:nth-child(odd){
+    background-color: #dddddd;
+}
+ul li:nth-child(even) {
+    background-color: #c4e3f3;
+}
+ul li img {
+    vertical-align: middle;
+}
+
+ul li.selected {
+    background-color: #b92c28;
+    color: #fff;
+    text-decoration: line-through;
+}

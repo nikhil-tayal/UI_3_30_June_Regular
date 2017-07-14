@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../model/Songs.js"></script>
+    <script src="../model/songs_obj.js"></script>
+    <script src="../controller/controller.js"></script>
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+
+<h1>CRUD Operations</h1>
+
+<table>
+    <tr>
+        <td>Enter Song Name</td>
+        <td><input type="text" placeholder="Enter Song Name" id="song_name"/></td>
+    </tr>
+    <tr>
+        <td>Enter Singer Name</td>
+        <td><input type="text" placeholder="Enter Singer Name" id="singer_name"/></td>
+    </tr>
+    <tr>
+        <td>Enter Movie/Album Name</td>
+        <td><input type="text" placeholder="Enter Movie Name" id="movie_name"/></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td>
+            <button id="add">Add</button>
+            <button id="del">Delete</button>
+            <button id="update">Update</button>
+            <button id="sort">Sort</button>
+            <button id="search">Search</button>
+            <button id="save">Save</button>
+            <button id="load">Load</button>
+        </td>
+    </tr>
+</table>
+
+<ul id="item_list">
+
+</ul>
+
+</body>
+</html>

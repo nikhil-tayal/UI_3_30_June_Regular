@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function play_song(){
+            a = document.getElementById("audio");
+            a.play();
+        }
+        function pause_song(){
+            a.pause();
+        }
+        function play_new_song(){
+            n = document.getElementById("song_1").innerHTML;
+            a.pause()
+            a.startTime = 0;
+            a.src = n+".mp3";
+            a.play()
+        }
+    </script>
+</head>
+<body>
+
+<h1>Songs Player</h1>
+
+<audio controls="controls" id="audio">
+    <source src="../../bang-bang.mp3">
+</audio>
+<button onclick="play_song()">Play Song</button>
+<button onclick="pause_song()">Pause Song</button>
+
+<a href="#" id="song_1" onclick="play_new_song()">diljit_song</a>
+
+</body>
+</html>
