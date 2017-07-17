@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Upload and Play Songs</h1>
+
+
+<input type="file" id="file"/>
+<br/><br/>
+<audio controls="controls" id="audio">
+    <source src="" type="audio/mp3">
+</audio>
+
+<button id="play">Play</button>
+
+<script>
+    window.addEventListener("load",play_songs);
+
+    function play_songs(){
+        file = document.getElementById("file");
+        audio = document.getElementById("audio");
+        document.getElementById("play").addEventListener("click",play_song)
+    }
+    function play_song(){
+        name = file.files[0].name;
+        audio.pause()
+        /*audio.startTime = 0;*/
+        audio.src = "songs/"+name;
+        audio.play()
+    }
+</script>
+
+</body>
+</html>

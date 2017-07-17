@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Music Player</h1>
+
+<audio controls="controls" id="audio">
+    <source src="songs/Dont%20Let%20Me%20Down.mp3">
+</audio>
+
+<div>
+    <a href="#" class="song_name">Laembadgini</a><br/><br/>
+    <a href="#" class="song_name">Na Ja - Pav Dharia</a><br/><br/>
+    <a href="#" class="song_name">raabta</a>
+</div>
+
+
+<script>
+    window.addEventListener("load",init_songs)
+    function init_songs(){
+        audio = document.getElementById("audio");
+        song_name = document.getElementsByClassName("song_name");
+        for(var i = 0; i<song_name.length; i++){
+            song_name[i].addEventListener("click",play_song);
+        }
+    }
+    function play_song(){
+        song = event.srcElement.innerHTML;
+        audio.pause()
+        audio.startTime = 0;
+        audio.src = "songs/"+song+".mp3";
+        audio.play()
+    }
+</script>
+</body>
+</html>
