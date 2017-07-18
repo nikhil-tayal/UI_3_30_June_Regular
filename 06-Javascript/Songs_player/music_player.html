@@ -3,18 +3,33 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        img {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
 
 <h1>Music Player</h1>
 
+<div>
+    <img src="Na%20Ja.jpg" alt="image" id="image_1"/>
+</div>
 <audio controls="controls" id="audio">
     <source src="songs/Dont%20Let%20Me%20Down.mp3">
 </audio>
 
 <div>
-    <a href="#" class="song_name">Laembadgini</a><br/><br/>
-    <a href="#" class="song_name">Na Ja - Pav Dharia</a><br/><br/>
+    <a href="#" class="song_name">
+        <img src="Laembadgini.jpg" alt="image"/>
+        <span>Laembadgini</span>
+    </a><br/><br/>
+    <a href="#" class="song_name">
+        <img src="Na%20Ja.jpg" alt="image"/>
+        <span>Na Ja</span>
+    </a><br/><br/>
     <a href="#" class="song_name">raabta</a>
 </div>
 
@@ -33,7 +48,11 @@
         audio.pause()
         audio.startTime = 0;
         audio.src = "songs/"+song+".mp3";
-        audio.play()
+        audio.play();
+        change_image()
+    }
+    function change_image(){
+        document.getElementById("image_1").src = song+".jpg";
     }
 </script>
 </body>
