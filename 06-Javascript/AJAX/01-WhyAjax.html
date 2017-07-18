@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function call_me(){
+            setTimeout(do_work, 10000);
+        }
+        function do_work(){
+            for(var i = 0; i<1000;i++){
+                for(var j = 0; j <100; j++){
+                    console.log("Processing.....");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1>Need of AJAX</h1>
+
+<input type="text" placeholder="Enter Here"/>
+<button onclick="call_me()">Click Here</button>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        function call_ajax(){
+            console.log("First");
+            console.log("Second");
+            console.log("Third");
+            console.log("Fourth");
+            $.get("demo.html", function(data){
+                $("#data").html(data);
+                console.log("Fifth");
+            })
+            console.log("Sixth");
+            console.log("Seventh");
+        }
+    </script>
+</head>
+<body>
+
+<h1>AJAX Call</h1>
+
+<button onclick="call_ajax()">Click Here</button>
+
+<div id="data">
+
+</div>
+
+</body>
+</html>
