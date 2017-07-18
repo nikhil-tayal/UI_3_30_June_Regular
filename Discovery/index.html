@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="assets/stylesheet/font-awesome.min.css"/>
     <link rel="stylesheet" href="assets/stylesheet/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <style>
+        #header.active {
+            padding: 10px 0px;
+            background-color: rgba(255,0,0,0.8);
+            transition: 1s;
+        }
+    </style>
 </head>
 <body>
 
@@ -144,6 +151,20 @@
     </div>
 
 </div>
+
+
+<script>
+    var header = document.getElementById("header");
+    window.addEventListener("scroll", function(){
+        if(window.scrollY > 200){
+            console.log(window.scrollY);
+            header.className = "active";
+        }
+        else {
+            header.className = "";
+        }
+    })
+</script>
 
 </body>
 </html>
