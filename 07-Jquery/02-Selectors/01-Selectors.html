@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Jquery DOM</h1>
+
+<input type="text" placeholder="Enter Name"/>
+<input type="password" placeholder="Enter Password"/>
+
+<button>Click Me</button>
+
+<button>+</button>
+<button>-</button>
+<button>/</button>
+<button>*</button>
+
+<h2>Hello <span></span></h2>
+
+<div id="div_1">
+    <img src="../../images/NewImages/LziFSQN.png" alt="image"/>
+</div>
+
+
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#div_1 > img").click(function(){
+            $("input").hide(2000)
+        })
+        /*$("input[type='text']").on("blur", function(){
+            alert("Fill this field");
+        })*/
+        var v = $("input[type='text']")
+        $("button").click(function(){
+            x = $(this).html()
+            console.log(x)
+            /*$("span").html(v.val())*/
+        })
+    })
+</script>
+</body>
+</html>
