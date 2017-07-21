@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery-3.1.1.js"></script>
+</head>
+<body>
+   
+   <h1>Jquery Events</h1>
+   <button class="hide">SlideUp</button> 
+   <button class="show">SlideDown</button>
+   <button class="toggle">SlideToggle</button> <br>
+   <img src="../../BootstrapDemo/00805-2_2for10_HomePageBanner_desktop_R2.jpg" alt="image" height="300" width="600">
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".hide").click(function(){
+            $("img").slideUp(3000);
+        });
+        $(".show").click(function(){
+            $("img").slideDown(3000);
+        });
+        $(".toggle").click(function(){
+            $("img").slideToggle(3000);
+        });
+    });
+</script>
+    
+</body>
+</html>
