@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Drag And Drop- Powered by .COM</title>
+<title>Drag And Drop</title>
 <style type="text/css">
 #leftDiv {
 	width: 335px;
@@ -16,19 +16,15 @@
 #rightDiv {
 	
 	width: 335px;
-	height: 300px;
+	height: 170px;
 	padding: 10px;
 	border: 5px solid red;
 	float: left;
 	background-color: gray;
 }
-	img {
-		height: 300px;
-		width: 150px;
-	}
 </style>
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script src="js/modernizr.js"></script>
+<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/modernizr.js"></script>
 <script type="text/javascript">
 $(window).load(function(){
 	
@@ -46,19 +42,14 @@ function dragend(ev) {
 	}
 
 	function drag(ev) {
-		//alert(ev.target.id);
 		ev.dataTransfer.setData("Text", ev.target.id);
-			/*this.style.opacity = '0.4';*/
-		console.log(ev.target.id);
+		this.style.opacity = '0.4';
 	}
 
 	function drop(ev) {
-		//ev.preventDefault();  // Tell to Browser to do no event
-		var ID = ev.dataTransfer.getData("Text");
-		var image = document.getElementById(ID);
-		//alert("ID "+ID + " "+document.getElementById(ID));
-		ev.target.appendChild(image);
-		
+		ev.preventDefault();  // Tell to Browser to do no event
+		var data = ev.dataTransfer.getData("Text");
+		ev.target.appendChild(document.getElementById(data));
 	}
 </script>
 </head>
@@ -66,14 +57,11 @@ function dragend(ev) {
 
 	<h2>Drag the image into the rectangle:</h2>
 
-	<div id="leftDiv"  ondrop="drop(event)"
-		 ondragover="allowDrop(event)" ondragend="dragend(event)"></div>
+	<div id="leftDiv"  ondrop="drop(event)" ondragover="allowDrop(event)" ondragend="dragend(event)"></div>
 	
-	<div id="rightDiv" ondrop="drop(event)"
-		 ondragover="allowDrop(event)" ondragend="dragend(event)">
-
-	<img id="drag1" src="Iron-Man-AOU-Render.png" draggable="true"
-		ondragstart="drag(event)"  width="336" height="100" >
+	<div id="rightDiv">
+	<img id="drag1" src="kitten-curled.png" draggable="true"
+		ondragstart="drag(event)" width="336" height="100" >
 	</div>
 </body>
 </html>
